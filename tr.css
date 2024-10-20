@@ -17,14 +17,29 @@ header {
   padding: 1rem 2rem;
 }
 
-header .logo img {
-  height: 50px;
+.logo img {
+  height: 50px; /* Sesuaikan dengan ukuran yang diinginkan */
+  width: 50px; /* Pastikan lebar dan tinggi sama untuk efek bundar */
+  border-radius: 50%; /* Membuat gambar menjadi bundar */
+  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+.logo {
+  position: absolute; /* Position the logo absolutely */
+  top: 1rem; /* Adjust the distance from the top */
+  left: 2rem; /* Adjust the distance from the left */
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px; /* Set the font size for all menu items */
+  padding: 0.5rem 1rem; /* Sesuaikan padding jika diperlukan */
+  font-weight:200;
 }
 
 nav ul li {
@@ -171,11 +186,28 @@ footer form button:hover {
   background-color: #ff4c4c;
 }
 
-/* Animasi tambahan */
 .card {
-  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
 }
 
 .card:hover {
   transform: scale(1.05);
 }
+
+.tengah{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#footer h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 25px;
+  font-weight: 500;
+  color: #fff;
+}
+
