@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 1rem 2rem;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+#hero-banner {
+  background: url("banner.jpg") no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text {
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+}
+
+.hero-text .btn {
+  background-color: #ff6666;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.hero-text .btn:hover {
+  background-color: #ff4c4c;
+}
+
+section {
+  padding: 3rem 2rem;
+  background-color: white;
+}
+
+#shop-jakarta,
+#shop-bali {
+  background-color: #f9f9f9;
+}
+
+.product-list {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Menambahkan flex-wrap untuk responsivitas */
+}
+
+.product-list article {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  flex: 1 1 300px; /* Menambahkan fleksibilitas untuk ukuran */
+}
+
+.product-list img {
+  max-width: 100%;
+  height: auto;
+}
+
+#about-us {
+  text-align: center;
+}
+
+#gallery {
+  background-color: #f9f9f9;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsif */
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer form {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+footer form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+footer form input,
+footer form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+footer form button {
+  background-color: #ff6666;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+footer form button:hover {
+  background-color: #ff4c4c;
+}
+
+/* Animasi tambahan */
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
