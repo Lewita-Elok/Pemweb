@@ -5,29 +5,32 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #f4f4f4;
+  color: #333;
 }
 
+/* Header Styling */
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-color: #f8f9fa;
+  background-color: #f8f9fa; /* Warna dasar peach lembut */
   padding: 1rem 2rem;
+  border-bottom: 3px solid #d7ccc8; /* Aksen coklat */
 }
 
 .logo img {
-  height: 50px; /* Sesuaikan dengan ukuran yang diinginkan */
+  height: 50px;
   width: 50px; /* Pastikan lebar dan tinggi sama untuk efek bundar */
-  border-radius: 50%; /* Membuat gambar menjadi bundar */
+  border-radius: 50%; /* Membuat gambar logo menjadi bundar */
   object-fit: cover; /* Memastikan gambar tidak terdistorsi */
 }
 
 .logo {
-  position: absolute; /* Position the logo absolutely */
-  top: 1rem; /* Adjust the distance from the top */
-  left: 2rem; /* Adjust the distance from the left */
+  position: absolute; /* Posisi logo secara absolut */
+  top: 1rem; /* Jarak dari atas */
+  left: 2rem; /* Jarak dari kiri */
 }
 
 nav ul {
@@ -37,28 +40,18 @@ nav ul {
 }
 
 .navbar-nav .nav-link {
-  font-size: 16px; /* Set the font size for all menu items */
-  padding: 0.5rem 1rem; /* Sesuaikan padding jika diperlukan */
-  font-weight:200;
-}
-
-nav ul li {
-  margin: 0;
-}
-
-nav ul li a {
-  color: #333;
-  text-decoration: none;
-  font-size: 1rem;
+  font-size: 16px;
   padding: 0.5rem 1rem;
-  transition: background 0.3s ease;
+  font-weight: 200;
+  color: #5d4037; /* Aksen coklat */
+  transition: color 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
-  background-color: #555;
-  color: white;
+.navbar-nav .nav-link:hover {
+  color: #8e6e53;
 }
 
+/* Hero Banner */
 #hero-banner {
   background: url("banner.jpg") no-repeat center center/cover;
   height: 400px;
@@ -96,21 +89,77 @@ nav ul li a:hover {
   background-color: #ff4c4c;
 }
 
+/* Produk Section */
 section {
   padding: 3rem 2rem;
   background-color: white;
 }
 
-#shop-jakarta,
-#shop-bali {
-  background-color: #f9f9f9;
+#products {
+  padding: 2rem 0;
 }
 
+#products h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+.card-text {
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #000000;
+}
+
+.btn-primary {
+  background-color: #ffccbc;
+  border-color: #ffab91;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ffab91;
+  border-color: #ff7043;
+}
+
+/* Responsivitas Produk */
 .product-list {
   display: flex;
   gap: 2rem;
   justify-content: space-around;
-  flex-wrap: wrap; /* Menambahkan flex-wrap untuk responsivitas */
+  flex-wrap: wrap;
 }
 
 .product-list article {
@@ -118,25 +167,17 @@ section {
   border: 1px solid #ddd;
   padding: 1rem;
   text-align: center;
-  flex: 1 1 300px; /* Menambahkan fleksibilitas untuk ukuran */
+  flex: 1 1 300px;
 }
 
-.product-list img {
-  max-width: 100%;
-  height: auto;
-}
-
-#about-us {
-  text-align: center;
-}
-
+/* Gallery Section */
 #gallery {
   background-color: #f9f9f9;
 }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsif */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
 }
 
@@ -145,11 +186,20 @@ section {
   height: auto;
 }
 
+/* Footer */
 footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 2rem 1rem;
+}
+
+#footer h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 25px;
+  font-weight: 500;
+  color: #fff;
 }
 
 footer form {
@@ -186,28 +236,6 @@ footer form button:hover {
   background-color: #ff4c4c;
 }
 
-.card {
-  margin-bottom: 20px;
+.tengah {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-
-.card img {
-  height: 250px;
-  object-fit: cover;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.tengah{
-  font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-#footer h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  padding: 25px;
-  font-weight: 500;
-  color: #fff;
-}
-
