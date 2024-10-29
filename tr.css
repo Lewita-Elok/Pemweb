@@ -1,3 +1,4 @@
+/* Reset dan dasar */
 * {
   margin: 0;
   padding: 0;
@@ -10,14 +11,92 @@ body {
   color: #333;
 }
 
+html,
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/flower.jpg");
+  background-size: auto;
+  background-position: center;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Form Login dan Sign-Up */
+.form-container {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 3rem 5rem;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.form-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.75rem;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-primary {
+  background-color: #ffab91;
+  border: none;
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #ff6666;
+}
+
+.form-footer {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.form-footer .toggle-link {
+  cursor: pointer;
+  color: #ddd;
+  text-decoration: underline;
+}
+
 /* Header Styling */
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8f9fa; 
+  background-color: #f8f9fa;
   padding: 1rem 2rem;
-  border-bottom: 3px solid #d7ccc8; 
+  border-bottom: 3px solid #d7ccc8;
 }
 
 header h1 {
@@ -28,15 +107,15 @@ header h1 {
 
 .logo img {
   height: 50px;
-  width: 50px; 
+  width: 50px;
   border-radius: 50%;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .logo {
-  position: absolute; 
-  top: 1rem; 
-  left: 2rem; 
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
 }
 
 nav ul {
@@ -49,7 +128,7 @@ nav ul {
   font-size: 16px;
   padding: 0.5rem 1rem;
   font-weight: 200;
-  color: #5d4037; /* Aksen coklat */
+  color: #5d4037;
   transition: color 0.3s ease-in-out;
 }
 
@@ -148,18 +227,6 @@ section {
   color: #000000;
 }
 
-.btn-primary {
-  background-color: #ffccbc;
-  border-color: #ffab91;
-  color: #fff;
-  transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-  background-color: #ffab91;
-  border-color: #ff7043;
-}
-
 /* Responsivitas Produk */
 .product-list {
   display: flex;
@@ -197,6 +264,7 @@ section {
   margin-bottom: 1.5rem;
 }
 
+/* Button Secondary */
 .btn-secondary {
   background-color: #c5c5c5;
   color: #444;
