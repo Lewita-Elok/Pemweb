@@ -9,7 +9,7 @@ html {
   height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4; 
   color: #333;
 }
 
@@ -85,7 +85,7 @@ nav ul {
   font-size: 16px;
   padding: 0.5rem 1rem;
   font-weight: 200;
-  color: #5d4037; /* Aksen coklat */
+  color: #5d4037; 
   transition: color 0.3s ease-in-out;
 }
 
@@ -262,6 +262,37 @@ section {
 .gallery-grid img {
   width: 100%;
   height: auto;
+}
+
+/* Kategori */
+.category-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.category {
+  width: 250px; 
+  height: 250px;
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; 
+  margin: 30px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s; 
+  flex-direction: column;
+}
+
+.category:hover {
+  transform: scale(1.1);
+}
+
+.category img {
+  max-width: 80%; 
+  max-height: 80%; 
 }
 
 /* Footer */
