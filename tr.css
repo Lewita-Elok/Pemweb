@@ -15,22 +15,28 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8f9fa; /* Warna dasar peach lembut */
+  background-color: #f8f9fa; 
   padding: 1rem 2rem;
-  border-bottom: 3px solid #d7ccc8; /* Aksen coklat */
+  border-bottom: 3px solid #d7ccc8; 
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #444;
 }
 
 .logo img {
   height: 50px;
-  width: 50px; /* Pastikan lebar dan tinggi sama untuk efek bundar */
-  border-radius: 50%; /* Membuat gambar logo menjadi bundar */
-  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+  width: 50px; 
+  border-radius: 50%;
+  object-fit: cover; 
 }
 
 .logo {
-  position: absolute; /* Posisi logo secara absolut */
-  top: 1rem; /* Jarak dari atas */
-  left: 2rem; /* Jarak dari kiri */
+  position: absolute; 
+  top: 1rem; 
+  left: 2rem; 
 }
 
 nav ul {
@@ -168,6 +174,42 @@ section {
   padding: 1rem;
   text-align: center;
   flex: 1 1 300px;
+}
+
+/* Produk Detail */
+#productImage {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #f0f0f0;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+#productName {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+#productDescription {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.btn-secondary {
+  background-color: #c5c5c5;
+  color: #444;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #a1a1a1;
+  color: #ffffff;
 }
 
 /* Gallery Section */
