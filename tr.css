@@ -1,19 +1,20 @@
-/* Reset dan dasar */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Arial", sans-serif;
-  background-color: #f4f4f4;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Warna latar belakang default untuk halaman lain */
   color: #333;
 }
 
-html,
-body {
-  height: 100%;
+/* Background untuk halaman login */
+.login-page {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,7 +23,7 @@ body {
   background-position: center;
 }
 
-/* Overlay */
+/* Style untuk overlay dan form-container */
 .overlay {
   position: absolute;
   top: 0;
@@ -33,7 +34,6 @@ body {
   z-index: 1;
 }
 
-/* Form Login dan Sign-Up */
 .form-container {
   position: relative;
   z-index: 2;
@@ -44,49 +44,6 @@ body {
   width: 100%;
   color: #fff;
   text-align: center;
-}
-
-.form-container h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  font-weight: bold;
-}
-
-.form-control {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  padding: 0.75rem;
-}
-
-.form-control::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.btn-primary {
-  background-color: #ffab91;
-  border: none;
-  padding: 0.75rem;
-  width: 100%;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-.btn-primary:hover {
-  background-color: #ff6666;
-}
-
-.form-footer {
-  font-size: 0.9rem;
-  margin-top: 1rem;
-}
-
-.form-footer .toggle-link {
-  cursor: pointer;
-  color: #ddd;
-  text-decoration: underline;
 }
 
 /* Header Styling */
@@ -128,7 +85,7 @@ nav ul {
   font-size: 16px;
   padding: 0.5rem 1rem;
   font-weight: 200;
-  color: #5d4037;
+  color: #5d4037; /* Aksen coklat */
   transition: color 0.3s ease-in-out;
 }
 
@@ -138,7 +95,7 @@ nav ul {
 
 /* Hero Banner */
 #hero-banner {
-  background: url("banner.jpg") no-repeat center center/cover;
+  background: url("images/bg.jpg") no-repeat center center/cover;
   height: 400px;
   display: flex;
   align-items: center;
@@ -227,6 +184,18 @@ section {
   color: #000000;
 }
 
+.btn-primary {
+  background-color: #ffccbc;
+  border-color: #ffab91;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ffab91;
+  border-color: #ff7043;
+}
+
 /* Responsivitas Produk */
 .product-list {
   display: flex;
@@ -264,7 +233,6 @@ section {
   margin-bottom: 1.5rem;
 }
 
-/* Button Secondary */
 .btn-secondary {
   background-color: #c5c5c5;
   color: #444;
